@@ -1,0 +1,12 @@
+names:
+- License plates
+nc: 1
+roboflow:
+  license: Private
+  project: my-first-project-lj0to
+  url: https://app.roboflow.com/s-workspace-mcr92/my-first-project-lj0to/1
+  version: 1
+  workspace: s-workspace-mcr92
+test: ../test/images
+train: ../train/images
+val: ../valid/images
