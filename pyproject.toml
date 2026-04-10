@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "ml-tsu-module-2"
+version = "0.1.0"
+description = ""
+authors = ["bo6eR-public <bo6eR.public@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "project" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
