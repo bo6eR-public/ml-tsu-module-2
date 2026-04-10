@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 class My_LicensePlate_Model:
     def __init__(self):
-        self.model = YOLO("weights/best.pt")
+        self.model = YOLO("project/weights/best.pt")
 
     def detect_plates(self, frame: np.ndarray) -> list[dict]:
         results = self.model(frame)[0]

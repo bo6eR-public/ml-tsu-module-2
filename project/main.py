@@ -1,5 +1,6 @@
 import argparse
 import cv2
+import time
 import logging
 from model_impl import My_LicensePlate_Model
 
@@ -18,7 +19,11 @@ def process_video(source):
         if not ret:
             break
 
+        start = time.time()
         detections = model.detect_plates(frame)
+
+        latency = time.time() - start
+        logging.info(f"Latency: {latency}")
 
         for d in detections:
             x1, y1, x2, y2 = map(int, d["bbox"])
@@ -34,7 +39,7 @@ def process_camera():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", choices=["video", "camera"])
-    parser.add_argument("--source", default="video.mp4")
+    parser.add_argument("--source", default="scripts/sources/video.mp4")
 
     args = parser.parse_args()
 
