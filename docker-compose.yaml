@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  video:
+    build: .
+    command: python project/main.py --mode video --source scripts/sources/video.mp4
+    volumes:
+      - .:/app
+
+  camera:
+    build: .
+    command: python project/main.py --mode camera
+    volumes:
+      - .:/app
