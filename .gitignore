@@ -180,8 +180,6 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-scripts/train.py
-scripts/load.py
 yolov8n.pt
 
 runs/

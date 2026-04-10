@@ -9,7 +9,9 @@ by Timur Nikulin, 972403
 5. Run `model.py` to start analysis your custom video or web-camera\
    `py project/main.py --mode video --source sources/video.mp4` - for your video\
    `py project/main.py --mode camera` - for your web-camera
-6. #TODO
+6. If you want to run docker:\
+   `docker-compose up video` - to run with video source\
+   `docker-compose up camera` - to run with live camera source
 
 ## Information sources
 `dataset (video) for roboflow was taken from` - [shutterstock](https://www.shutterstock.com/ru/video/search/car-plates-russia)\
