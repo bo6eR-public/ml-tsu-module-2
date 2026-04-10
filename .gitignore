@@ -186,4 +186,5 @@ yolov8n.pt
 
 runs/
 data/
-scripts/sources/
+scripts/predict-sources/
+sources/

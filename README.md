@@ -2,11 +2,14 @@
 by Timur Nikulin, 972403
 
 ## Work steps
-1. Load own dataset or use `scripts/load.py` to load ready dataset with license plates
-2. Train your model (use `scripts/train.py`). You have to have `data` folder with `data.yaml` into one (maybe you need to rename your dataset folder to `data`)
-3. Check: model is working or not with `scripts/check.py`
-4. Run `model.py` to start analysis your custom video or web-camera
-5. #TODO
+1. Load own dataset or use `scripts/load.py` to load ready dataset with license plates (rename downloaded folder to `data`)
+2. Train your model (use `scripts/train.py`). You have to have `data` folder with `data.yaml` into one (check this one)
+3. Check your model that is working or not with `scripts/check.py`
+4. Move `runs/detect/train/weight/best.pt` to `project/weights`
+5. Run `model.py` to start analysis your custom video or web-camera\
+   `py project/main.py --mode video --source sources/video.mp4` - for your video\
+   `py project/main.py --mode camera` - for your web-camera
+6. #TODO
 
 ## Information sources
 `dataset (video) for roboflow was taken from` - [shutterstock](https://www.shutterstock.com/ru/video/search/car-plates-russia)\
