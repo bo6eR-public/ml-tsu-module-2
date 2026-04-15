@@ -2,14 +2,15 @@
 by Timur Nikulin, 972403
 
 ## Work steps
-1. Load own dataset or use `scripts/load.py` to load ready dataset with license plates (rename downloaded folder to `data`)
-2. Train your model (use `scripts/train.py`). You have to have `data` folder with `data.yaml` into one (check this one)
-3. Check your model that is working or not with `scripts/check.py`
-4. Move `runs/detect/train/weight/best.pt` to `project/weights`
-5. Run `model.py` to start analysis your custom video or web-camera\
+1. Install `roboflow` & `ultralytics` packages to python
+2. Load own dataset or use `scripts/load.py` to load ready dataset with license plates (rename downloaded folder to `data`)
+3. Train your model (use `scripts/train.py`). You have to have `data` folder with `data.yaml` into one (check this one)
+4. Check your model that is working or not with `scripts/check.py`
+5. Move `runs/detect/train/weight/best.pt` to `project/weights`
+6. Run `model.py` to start analysis your custom video or web-camera\
    `py project/main.py --mode video --source sources/video.mp4` - for your video\
    `py project/main.py --mode camera` - for your web-camera
-6. If you want to run docker:\
+7. If you want to run docker:\
    `docker-compose up video` - to run with video source\
    `docker-compose up camera` - to run with live camera source
 

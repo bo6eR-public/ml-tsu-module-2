@@ -186,3 +186,5 @@ runs/
 data/
 scripts/predict-sources/
 sources/
+
+.idea/
